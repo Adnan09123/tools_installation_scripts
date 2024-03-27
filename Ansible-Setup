@@ -17,5 +17,8 @@ On Master: ssh-keygen
 
 On Slave: sudo nano .ssh/authorized_keys
 
+On Master
 [Servers]
 host1 ansible_ssh_host=209.0.113.1
+
+ansible -m ping all
