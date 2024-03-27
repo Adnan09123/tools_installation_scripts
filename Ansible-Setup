@@ -1,0 +1,21 @@
+Install ansible
+
+On Master
+
+sudo apt-get update
+sudo apt install software-properties-common
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt update
+sudo apt install ansible -y
+
+On Slave
+sudo apt-get update
+sudo apt-get install python
+
+keyless SSH  
+On Master: ssh-keygen
+
+On Slave: sudo nano .ssh/authorized_keys
+
+[Servers]
+host1 ansible_ssh_host=209.0.113.1
