@@ -10,7 +10,7 @@ sudo apt install ansible -y
 
 On Slave
 sudo apt-get update
-sudo apt-get install python
+sudo apt-get install python3
 
 keyless SSH  
 On Master: ssh-keygen
