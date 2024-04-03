@@ -34,7 +34,7 @@ resource "docker_container" "nginx" {
 ==> docker
 ==> terraform plan
 ==> sudo docker ps
-==> sudo chown $USER/var/run/docker.sock
+==> sudo chown $USER /var/run/docker.sock
 ==> terraform plan
 ==> terraform validate
 ==> terraform apply
