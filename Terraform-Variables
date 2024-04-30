@@ -14,7 +14,7 @@ resource "local_file" "devops" {
 
 ==> nano variable.tf
 
-variable "fliename" {
+variable "filename" {
        default = "/home/ubuntu/terraform-variables/devops-automated.txt"
 }
 
