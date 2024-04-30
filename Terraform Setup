@@ -23,3 +23,18 @@ sudo apt update
 sudo apt-get install terraform
 
 terraform --version
+
+
+### If above installion command is not working then use below commands ###
+
+==> sudo apt update
+
+==> sudo apt install unzip
+
+==>wget https://releases.hashicorp.com/terraform/$(curl -s https://checkpoint-api.hashicorp.com/v1/check/terraform | jq -r -M '.current_version')/terraform_$(curl -s https://checkpoint-api.hashicorp.com/v1/check/terraform | jq -r -M '.current_version')_linux_amd64.zip
+
+==>unzip terraform_*_linux_amd64.zip
+
+==>sudo mv terraform /usr/local/bin/
+
+==>terraform --version
